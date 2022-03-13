@@ -1,8 +1,13 @@
 import React from 'react'
+import { Typography, Button, Divider } from '@material-ui/core'
 
-const PaymentForm = () => {
+import Review from './Review'
+
+const PaymentForm = ({ checkoutToken}) => {
   return (
-    <div>PaymentForm</div>
+    <>
+    <Review checkoutToken={checkoutToken} />
+    </>
   )
 }
 
