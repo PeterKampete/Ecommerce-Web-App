@@ -44,7 +44,6 @@ const AddressForm = ({ checkoutToken, next }) => {
     const { countries } = await commerce.services.localeListShippingCountries(
       checkoutTokenId
     );
-    console.log(countries);
     setShippingCountries(countries);
   };
 
@@ -158,7 +157,7 @@ const AddressForm = ({ checkoutToken, next }) => {
             <Button component={Link} to="/cart" variant="outlined">
               Back to Cart
             </Button>
-            <Button type="button" variant="contained" color="primary">
+            <Button type="submit" variant="contained" color="primary">
               Next
             </Button>
           </div>
